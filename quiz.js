@@ -2,9 +2,9 @@
 var treeHeight = document.getElementById("inputTextHeight");
 
 function tree() {
-  for (var i = 1; i < treeHeight.value; i+=2) {
+  for (var i = 1; i < (treeHeight.value * 2); i+=2) {
     var treeList = [];
-    for (var k = 0; k < (4 - i / 2); k++) {
+    for (var k = 0; k < (treeHeight.value - i / 2); k++) {
       treeList.push(" ");
     }
     for (var j = 0; j < i; j++) {
