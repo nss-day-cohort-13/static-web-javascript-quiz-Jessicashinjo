@@ -31,8 +31,8 @@ function pressEnter(e) {
 
 //Gives alert if text field is not filled in. Otherwise it runs the tree program
 function validateTextField() {
-  if (userInputFields.character.value === "") {
-    alert("Please enter a character");
+  if (userInputFields.character.value === "" || userInputFields.character.value.length > 1) {
+    alert("Please enter 1 character");
   } else if (userInputFields.height.value === "") {
     alert("Please enter a height");
   } else {
